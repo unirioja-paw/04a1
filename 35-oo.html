@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW</title>
+  <script type="text/javascript">
+    class Rectangulo {
+      constructor(alto, ancho) {
+        this.alto = alto;
+        this.ancho = ancho;
+      }
+
+      get area() { return this.alto * this.ancho; }
+
+      perimetro() {// NO Poner this.perimetro
+        return this.alto * 2 + this.ancho * 2;
+      }
+    }
+
+    var r = new Rectangulo(1, 2);  // construccion del objeto
+    console.log(r.area) // getter
+    console.log(r.perimetro()) // metodo
+
+
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

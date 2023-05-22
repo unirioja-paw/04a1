@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW</title>
+  <script type="text/javascript">
+
+    var a = [1, -2, 3];
+    
+    // funcion flecha
+    var z1 = a.filter(x => x > 0);
+    console.log(z1)
+
+    // funcion anonima
+    var z2 = a.filter(
+      function (x) {
+        return x > 0;
+      }
+    );
+    console.log(z2)
+
+    // funcion explicita
+    function isGreaterThanZero(x) {
+      return x > 0;
+    }
+    var z3 = a.filter(isGreaterThanZero);
+    console.log(z3)
+
+
+
+
+
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

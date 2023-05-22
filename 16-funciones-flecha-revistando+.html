@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW</title>
+  <script type="text/javascript">
+
+    function opera(a, b, operador) {
+      var result = operador(a, b);
+      console.log(result)
+    }
+
+    function suma(x, y) {
+      return x + y
+    }
+    function resta(x, y) {
+      return x - y
+    }
+
+    console.log('suma')
+    opera(1, 2, suma)
+
+    console.log('resta')
+    opera(1, 2, resta)
+
+    console.log('x^2 + 2y')
+    opera(1, 2, function (x, y) { return x * x + 2 * y })
+
+    console.log('suma')
+    opera(1, 2, function (x, y) { return x + y })
+
+    console.log('suma')
+    opera(1, 2, (x, y) => { return x + y })
+
+    console.log('suma')
+    opera(1, 2, (x, y) => x + y )
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

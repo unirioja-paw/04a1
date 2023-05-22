@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW</title>
+  <script type="text/javascript">
+
+    var string1 = "foo";
+    var string2 = "bar";
+    var functionName = string1 + string2;
+
+    function foobar() {
+      console.log('Hello World');
+    }
+
+    eval(functionName + '()');  // Hello World
+
+
+    let a = 1;
+
+    function f() {
+      let a = 2;
+
+      eval('alert(a)'); // 2
+    }
+
+    f();
+
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

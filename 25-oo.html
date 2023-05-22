@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW</title>
+  <script type="text/javascript">
+
+    // Manera 1: objeto base (Object)
+    let yo = new Object();
+    yo.nombre = 'Philip';
+    yo.apellidos = 'Roth'
+
+    // Manera 2: funcion constructora
+    function Persona(nom, apes) {
+      this.nombre = nom;
+      this.apellidos = apes;
+    }
+    var p = new Persona('Philip', 'Roth');
+    var e = new Persona('Erica', 'Jong');
+    p.edad = 30; // a partir de ahora p tiene la propiedad ‘edad’, pero e no.
+    console.log(p)
+    console.log(e)
+
+    // Manera 3: JS Object Literal
+    var erica_asObjectLiteral = {
+      nombre: "Erica",
+      apellidos: "Jong"
+    };
+    console.log(erica_asObjectLiteral)
+
+    // Manera 4: notacion JSON
+    var erica_asJSON = {
+      "nombre": "Erica",
+      "apellidos": "Jong"
+    };
+    console.log(erica_asJSON)
+
+    // typeof de cada opcion?
+
+    // cual sirve para crear mas de un objeto del mismo tipo?
+
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

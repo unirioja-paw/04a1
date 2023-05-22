@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW</title>
+  <script type="text/javascript">
+
+    // subscribe to the same channel, "my-channel"
+    const channel = new BroadcastChannel("my-channel");
+
+    channel.addEventListener("message", e => {
+      console.log(e.data);
+    });
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

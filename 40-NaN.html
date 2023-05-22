@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW</title>
+  <script type="text/javascript">
+
+    function sanitise(x) {
+      if (isNaN(x)) {
+        return NaN;
+      }
+      return x;
+    }
+
+    console.log('1/0:')
+    console.log(1 / 0);
+
+    console.log('0/0:')
+    console.log(0 / 0);
+
+    console.log('sanitise 1:')
+    console.log(sanitise('1')); // 1
+
+    console.log('sanitise string:')
+    console.log(sanitise('NotANumber')); // NaN
+
+    if (Number.NaN)
+      console.log('NaN is not false')
+    else
+      console.log('NaN is false (falsy)')
+
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

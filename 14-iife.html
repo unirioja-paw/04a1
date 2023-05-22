@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW</title>
+  <script type="text/javascript">
+    (function () {
+      // statements
+      console.log('codigo de la funcion a ejecutar inmediatamente')
+    })();
+
+
+
+    (
+      function (x, y) {
+        var s = x + y;
+        console.log(s)
+      }
+    )
+      (18, 12)
+
+
+      (function ($) {
+        // scope seguro: $ se refiere a jQuery
+      })(jQuery);
+
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

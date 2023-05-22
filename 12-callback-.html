@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW</title>
+</head>
+
+<body>
+  <aside>
+    <a href="https://es.wikipedia.org/wiki/Cowsay">https://es.wikipedia.org/wiki/Cowsay</a>
+  </aside>
+
+  <div style="margin-bottom: 300px; font-size: 32px;">
+    <pre>
+----------------------------------------
+<span id="cowsay-output"></span>
+----------------------------------------
+\   ^__^
+\  (oo)\_______
+   (__)\       )\/\
+       ||----w |
+       ||     ||
+  </pre>
+  </div>
+
+
+  <script type="text/javascript">
+
+    function generateQuote(quote, callback) {
+      var q = `A wise woman said: ${quote}`
+      callback(q)
+    }
+
+    function logQuote(q) {
+      console.log(q)
+    }
+
+    function cowsay(textMessage) {
+      console.log('Gonna moo')
+      var cowsayOutput = document.getElementById("cowsay-output");
+      cowsayOutput.innerText = textMessage;
+    }
+
+    generateQuote(
+      'For a moment, nothing happened. Then, after a second or so, nothing continued to happen.',
+      cowsay
+    )
+
+    // generateQuote(
+    //   'If such a thing is a virtual impossibility, then it must logically be a finite improbability.',
+    //   function (q) { console.info(q) }
+    // )
+
+
+  </script>
+
+</body>
+
+</html>
